@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    background: url('/images/gracias.jpg') no-repeat center center/cover; /* Cambiar 'background.jpg' por la ruta de tu imagen */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(17, 19, 21, 0.748);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: -100px;
+}
+
+h1 {
+    color: #1b96f5;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.custom-select {
+    /* Ajusta el margin-left según lo necesites */
+    margin-left: 50px; /* Por ejemplo, moverlo 100px a la derecha */
+    height: 2vh;
+}
+
+
+/* Estilo para el select */
+.custom-select select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #3384cf;
+    width: 110px;
+}
+
+/* Estilo para la flecha */
+.custom-select .custom-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #b05a5a;
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 280px; /* Reducir el tamaño del logo para dispositivos móviles */
+    }
+    
+    .custom-select {
+        margin-left: 20px; /* Ajustar el margen izquierdo del select para dispositivos móviles */
+    }
+
+    .content {
+        padding: 20px; /* Reducir el padding del contenido para dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 24px; /* Reducir el tamaño del título para dispositivos móviles */
+    }
+
+    p {
+        font-size: 14px; /* Reducir el tamaño del párrafo para dispositivos móviles */
+        margin-bottom: 50px; /* Reducir el margen inferior del párrafo para dispositivos móviles */
+    }
+}

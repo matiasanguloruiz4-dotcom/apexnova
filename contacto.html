@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page | Living Code</title>
+    <link rel="stylesheet" href= "css/contacto.css">
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="custom-select">
+        <select id="language-select">
+            <option value="es">Spanish</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+    <div class="corner-logo">
+        <a href="index.html"><img src="images/logo12-removebg-preview.png" alt="Logo"></a>
+    </div>
+    
+    
+
+    <div class="container">
+        <div class="box-info">
+            <h1 class="contac1">CONTÁCTATE CON NOSOTROS</h1>
+            <div class="data">
+                <p><i class="fa-solid fa-envelope"></i> livingcodedev@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Dirección: Av. Los Paugiles Mz G Lote 2, Víctor Larco Herrera 13001. Peru</p>
+            </div>
+        </div> 
+           
+    
+        <form action="https://formsubmit.co/matiasflooone1234@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/gracias.html">
+            <div class="input-box">
+                <input type="text" name="name" id="name"  placeholder="Nombre y apellido" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" id="email"  placeholder="Correo electrónico">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="consulta" id="consulta"  placeholder="Asunto">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div class="input-box">
+                <textarea placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+            <button type="submit" class="submit">Enviar mensaje</button>
+        </form>
+        
+        
+    </div>
+
+    <script src="js/idioma2.js"></script>
+</body>
+</html>
