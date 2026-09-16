@@ -206,7 +206,7 @@ button {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('../images/fondo.jpg');
+    background-image: url('fondo.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.15;
